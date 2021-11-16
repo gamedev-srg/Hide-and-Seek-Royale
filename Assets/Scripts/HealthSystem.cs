@@ -24,25 +24,32 @@ public class HealthSystem : MonoBehaviour
     }
     public void takeDamge(int damage)
     {
-        if (currentHealth < maxHealth)
+        if (damage > 0)
         {
-            animator.SetTrigger("damage");
-        }
-        currentHealth -= damage;
-        if(currentHealth <= 0)
-        {
-            Die();
+            if (currentHealth <= maxHealth) //for testing purposes, but it doesn't affect the code.
+            {
+                animator.SetTrigger("damage"); // if we took damage that is greater than 0, play the hurt animation
+            }
+            //reduce health, and die if reached 0
+            currentHealth -= damage;
+            if (currentHealth <= 0)
+            {
+                Die();
 
+            }
         }
     }
     private void Die()
     {
+        //play die animation
         animator.SetBool("dead", true);
+        //disable character controller.
         controller = GetComponent<CharacterController>();
         if (controller)
         {
             controller.enabled = false;
         }
+        //killChild in the enemy parent object.
         if(tag == "Enemy")
         {
             var parent = transform.parent.GetComponent<checkEnding>();

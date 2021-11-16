@@ -11,6 +11,7 @@ public class PickupPowerup : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        //if player collides with the trap, pick it up
         if (other.tag == "Player")
         {
             
