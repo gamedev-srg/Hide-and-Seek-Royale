@@ -24,7 +24,10 @@ public class HealthSystem : MonoBehaviour
     }
     public void takeDamge(int damage)
     {
-        animator.SetTrigger("damage");
+        if (currentHealth < maxHealth)
+        {
+            animator.SetTrigger("damage");
+        }
         currentHealth -= damage;
         if(currentHealth <= 0)
         {

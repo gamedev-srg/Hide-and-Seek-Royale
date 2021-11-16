@@ -13,8 +13,8 @@ public class SpikeTrapDemo : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        //if a player trips the trap activate it
-        if (other.tag == "Player")
+        //if a player or enemy trips the trap activate it
+        if (other.tag == "Player" || other.tag == "Enemy")
         {
             StartCoroutine(OpenCloseTrap());
         }
