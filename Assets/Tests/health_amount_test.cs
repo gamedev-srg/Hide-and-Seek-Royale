@@ -9,7 +9,6 @@ public class health_amount_test
     [Test]
     public void health_amount_testSimplePasses()
     {
-        Assert.AreEqual();
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
