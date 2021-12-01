@@ -19,7 +19,6 @@ public class Pulser : MonoBehaviour
         startingScale = this.transform.localScale; //object's starting scale, to easly refence it.
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Checks if we reached reached lowerbounds, and need to swap resize direction to growing

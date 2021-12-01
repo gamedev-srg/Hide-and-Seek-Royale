@@ -4,18 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class checkEnding : MonoBehaviour
-{   //script for the object that is holding all the enemies if they are all dead.
+{   
+    //script for the object that is holding all the enemies if they are all dead.
     // An enemy calls killChild when it dies
     [Tooltip("Number of enemies to kill before game over")]
     [SerializeField] int aliveNumber;
   
-    // Start is called before the first frame update
     void Start()
     {
         aliveNumber = transform.childCount;
     }
 
-    // Update is called once per frame
     public void killChild()
     {
         aliveNumber--;

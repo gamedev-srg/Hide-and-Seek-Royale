@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     private CinemachineVirtualCamera vCam;
     [Tooltip("Camera sensitivity")]
     [SerializeField] float sensitivity;
-    // Start is called before the first frame update
+
     void Start()
     {
         vCam = GetComponent<Cinemachine.CinemachineVirtualCamera>();
@@ -18,7 +18,6 @@ public class CameraController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; //hide cursor and lock it inside the game screen, this should be its own script but its a one liner anyway..
     }
 
-    // Update is called once per frame
     void Update()
     {
         float yAxis = Input.GetAxis("Mouse Y") * sensitivity;

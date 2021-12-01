@@ -24,6 +24,7 @@ public class SpawnTrap : MonoBehaviour
         currentTraps += totalTraps - currentTraps; //refresh max stacks and make sure the indicator is on.
         trapIndicator.GetComponent<MeshRenderer>().enabled = true;
     }
+
     private GameObject Spawn() //spawn the trap 
     {
         
@@ -34,11 +35,9 @@ public class SpawnTrap : MonoBehaviour
         currentTraps -= 1;
         return newObject;
     }
-    // Update is called once per frame
+
     void Update()
     {   
-    
-
         trapYvalue = transform.position.y-groundOffset ; //correct the trap's height
         if (Input.GetKeyDown(KeyCode.F))
         {

@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class PickupPowerup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         //if player collides with the trap, pick it up

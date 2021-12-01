@@ -6,7 +6,6 @@ using UnityEngine;
 public class SpikeDamage : MonoBehaviour
 {
     //This scirpt is attached to the spikes BENEATH the trap
-    
     int sleepingDamage = 0; //as to not take damage when spawning traps
     int damageToUse;
     [Tooltip("Damage per spike")]
@@ -22,11 +21,11 @@ public class SpikeDamage : MonoBehaviour
             healthSystem.takeDamge(damageToUse);
         }
     }
+
     private void Start()
     {
         damageToUse = sleepingDamage;
         StartCoroutine(initializeTrap(sleep)); // used to give player time to spawn trap without taking damage.
-                                                //after timer ends, player can be damaged
     }
 
     IEnumerator initializeTrap(int sleep)

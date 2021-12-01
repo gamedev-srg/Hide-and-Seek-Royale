@@ -50,7 +50,6 @@ public class Fire : MonoBehaviour
             if (healthSystem)
             {
                 healthSystem.takeDamge(damage);
-               
             }
         }
     }
