@@ -6,11 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     private Animator animator;
     private CharacterController characterController;
-    [SerializeField] float rotationSpeed = 5f; //speed at which you rotate via mouse
-
+    [Tooltip("Player rotation speed at which you rotate via mouse")]
+    [SerializeField] float rotationSpeed = 5f;
+    [Tooltip("Player movement speed")]
     [SerializeField] float movementSpeed;
+    [Tooltip("Player sprinting speed")]
     [SerializeField] private float sprinting_speed;
-    [SerializeField] private float speedToUse; //to swap between sprinting and regular
+    [Tooltip("Player value switch between regulart and sprinting speed")]
+    [SerializeField] private float speedToUse;
     private HealthSystem healthSystem;
 
     // Start is called before the first frame update

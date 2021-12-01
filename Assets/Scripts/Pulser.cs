@@ -6,12 +6,13 @@ public class Pulser : MonoBehaviour
 {
     [Tooltip("The speed in which we increase our scale")]
     [SerializeField] float scaleRate = 0.01f;
-    [Tooltip("cale upperbounds (Refers to x attribute only)")]sd
-    [SerializeField] float maxScaleX = 2.0f; //scale upperbounds (Refers to x attribute only)
+    [Tooltip("Scale upper bounds (Refers to x attribute only)")]
+    [SerializeField] float maxScaleX = 2.0f;
+    [Tooltip("Scale lower bounds (Refers to x attribute only)")]
     [SerializeField] float minScaleX = 0.2f;
     Vector3 startPos;
     Vector3 startingScale;
-    // Start is called before the first frame update
+
     void Start()
     {
         startPos = transform.position; //object's starting positon, to easly refence it.

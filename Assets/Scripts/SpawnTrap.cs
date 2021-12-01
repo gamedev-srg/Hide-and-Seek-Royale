@@ -13,6 +13,7 @@ public class SpawnTrap : MonoBehaviour
     [SerializeField]int currentTraps;
     [Tooltip("This is a gameObject that indicates to the player he has a trap")]
     [SerializeField] GameObject trapIndicator;
+
     void Start()
     {
         currentTraps = totalTraps;

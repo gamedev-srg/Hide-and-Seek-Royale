@@ -9,8 +9,11 @@ public class SpikeDamage : MonoBehaviour
     
     int sleepingDamage = 0; //as to not take damage when spawning traps
     int damageToUse;
-    [SerializeField] int damage = 1; //actual damage - PER SPIKE
+    [Tooltip("Damage per spike")]
+    [SerializeField] int damage = 1;
+    [Tooltip("Sleep spwan time between traps")]
     [SerializeField] int sleep;
+
     private void OnTriggerEnter(Collider other)
     {
         var healthSystem = other.GetComponent<HealthSystem>(); //if spikes hit something get its health system and damage it.
