@@ -14,16 +14,9 @@ public class PickupPowerup : MonoBehaviour
         //if player collides with the trap, pick it up
         if (other.tag == "Player")
         {
-            
                 var spawnTrap = other.GetComponent<SpawnTrap>();
                 spawnTrap.gotTrap();
                 Destroy(gameObject);
-            
         }
-    }
-            // Update is called once per frame
-            void Update()
-    {
-        
     }
 }

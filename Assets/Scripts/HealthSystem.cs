@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-     public int currentHealth;
+    public int currentHealth;
     private Animator animator;
+    [Tooltip("Maximum player health points")]
     [SerializeField] public int maxHealth;
     CharacterController controller;
 
@@ -17,11 +18,6 @@ public class HealthSystem : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void takeDamge(int damage)
     {
         if (damage > 0)
@@ -35,10 +31,10 @@ public class HealthSystem : MonoBehaviour
             if (currentHealth <= 0)
             {
                 Die();
-
             }
         }
     }
+
     private void Die()
     {
         //play die animation

@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpikeTrapDemo : MonoBehaviour {
-
-    //This script goes on the SpikeTrap prefab;
+    [Tooltip("Time to activate spawn traps")]
     [SerializeField] float TimeToActivate;
     public Animator spikeTrapAnim; //Animator for the SpikeTrap;
 
     // Use this for initialization
-
-
     private void OnTriggerEnter(Collider other)
     {
         //if a player or enemy trips the trap activate it
@@ -19,15 +16,14 @@ public class SpikeTrapDemo : MonoBehaviour {
             StartCoroutine(OpenCloseTrap());
         }
     }
+
     void Awake()
     {
         //get the Animator component from the trap;
         spikeTrapAnim = GetComponent<Animator>();
         //start as closed
         spikeTrapAnim.SetTrigger("close");
-
     }
-
 
     IEnumerator OpenCloseTrap()
     {

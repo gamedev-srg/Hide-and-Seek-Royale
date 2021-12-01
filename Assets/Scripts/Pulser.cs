@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Pulser : MonoBehaviour
 {
-
-    [SerializeField] float scaleRate = 0.01f; //The speed in which we increase our scale
+    [Tooltip("The speed in which we increase our scale")]
+    [SerializeField] float scaleRate = 0.01f;
+    [Tooltip("cale upperbounds (Refers to x attribute only)")]sd
     [SerializeField] float maxScaleX = 2.0f; //scale upperbounds (Refers to x attribute only)
     [SerializeField] float minScaleX = 0.2f;
     Vector3 startPos;

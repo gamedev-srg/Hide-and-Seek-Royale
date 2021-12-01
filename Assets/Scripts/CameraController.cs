@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+
 public class CameraController : MonoBehaviour
 {
     //script for the cinemachine that tracks the player.
     private CinemachineComposer composer; 
     private CinemachineVirtualCamera vCam;
+    [Tooltip("Camera sensitivity")]
     [SerializeField] float sensitivity;
     // Start is called before the first frame update
     void Start()

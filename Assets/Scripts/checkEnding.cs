@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class checkEnding : MonoBehaviour
 {   //script for the object that is holding all the enemies if they are all dead.
     // An enemy calls killChild when it dies
+    [Tooltip("Number of enemies to kill before game over")]
     [SerializeField] int aliveNumber;
   
     // Start is called before the first frame update
@@ -17,7 +18,7 @@ public class checkEnding : MonoBehaviour
     // Update is called once per frame
     public void killChild()
     {
-        aliveNumber -= 1;
+        aliveNumber--;
         if (aliveNumber <= 0)
         {
             //if all children are read game is over.

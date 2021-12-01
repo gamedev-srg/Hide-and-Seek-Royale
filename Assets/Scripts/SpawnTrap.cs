@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class SpawnTrap : MonoBehaviour
 {
-    [SerializeField] GameObject prefabToSpawn; //which trap I want to spawn, we only have 1 so far.
-   float groundOffset= 1.0752042f; //calculated in game.
+    [Tooltip("Which trap I want to spawn, we only have 1 so far")]
+    [SerializeField] GameObject prefabToSpawn;
+    float groundOffset= 1.0752042f; //calculated in game.
     private float trapYvalue; //how low into the ground we want the trap.
-    int totalTraps = 2; 
+    int totalTraps = 2;
+    [Tooltip("Current number of traps")]
     [SerializeField]int currentTraps;
-    [SerializeField] GameObject trapIndicator; //this is a gameObject that indicates to the player he has a trap.
+    [Tooltip("This is a gameObject that indicates to the player he has a trap")]
+    [SerializeField] GameObject trapIndicator;
     void Start()
     {
         currentTraps = totalTraps;
