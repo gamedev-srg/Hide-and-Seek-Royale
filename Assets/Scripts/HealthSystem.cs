@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -49,10 +50,15 @@ public class HealthSystem : MonoBehaviour
         {
             var parent = transform.parent.GetComponent<checkEnding>();
             parent.killChild();
+            var mover = GetComponent<EnemyMover>();
+            var agent = GetComponent<NavMeshAgent>();
+            mover.enabled = false;
+            agent.enabled = false;
         }
         else if (tag == "Player")
         {
             Application.Quit();
         }
+        this.enabled = false;
     }
 }

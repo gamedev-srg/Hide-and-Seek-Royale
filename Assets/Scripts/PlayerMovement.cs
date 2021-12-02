@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,6 +44,18 @@ public class PlayerMovement : MonoBehaviour
             //characterController.SimpleMove(xShuffle * transform.right * speedToUse);
             //rotate with mouse
             transform.Rotate(Vector3.up, xAxisMouse * rotationSpeed * Time.deltaTime);
+            if (xAxisMouse != 0 && zAxis == 0)
+            {
+                animator.SetBool("rotating", true);
+            }
+            else
+            {
+                if (animator.GetBool("rotating") == true)
+                {
+                    animator.SetBool("rotating", false);
+                }
+            }
+
             if (zAxis != 0) //if zed is pressed, move forward using charactercontroller's simplemove (Don't really need to if here, beczue zAxis = 0 otherwise)
             {
                 characterController.SimpleMove(transform.forward * speedToUse * zAxis);
