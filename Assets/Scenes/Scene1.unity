@@ -3037,6 +3037,7 @@ GameObject:
   - component: {fileID: 168614274}
   - component: {fileID: 168614273}
   - component: {fileID: 168614272}
+  - component: {fileID: 168614275}
   m_Layer: 0
   m_Name: Sphere (9)
   m_TagString: Untagged
@@ -3066,10 +3067,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168614270}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &168614273
 MeshRenderer:
@@ -3120,6 +3121,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168614270}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &168614275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168614270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1001 &169104667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6349,6 +6365,7 @@ GameObject:
   - component: {fileID: 333040579}
   - component: {fileID: 333040578}
   - component: {fileID: 333040577}
+  - component: {fileID: 333040580}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -6378,10 +6395,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333040575}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &333040578
 MeshRenderer:
@@ -6432,6 +6449,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333040575}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &333040580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333040575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &338441984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6445,6 +6477,8 @@ GameObject:
   - component: {fileID: 338441985}
   - component: {fileID: 338441989}
   - component: {fileID: 338441988}
+  - component: {fileID: 338441990}
+  - component: {fileID: 338441991}
   m_Layer: 0
   m_Name: Enemy Medium Forest
   m_TagString: Enemy
@@ -6509,7 +6543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &338441989
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6520,7 +6554,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6532,6 +6566,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &338441990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338441984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &338441991
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338441984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &341288402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
@@ -6751,6 +6813,8 @@ GameObject:
   - component: {fileID: 354759753}
   - component: {fileID: 354759757}
   - component: {fileID: 354759756}
+  - component: {fileID: 354759758}
+  - component: {fileID: 354759759}
   m_Layer: 0
   m_Name: Enemy Not Hidden
   m_TagString: Enemy
@@ -6815,7 +6879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &354759757
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6826,7 +6890,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6838,6 +6902,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &354759758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354759752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &354759759
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354759752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &354879421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
@@ -7034,6 +7126,7 @@ GameObject:
   - component: {fileID: 370531163}
   - component: {fileID: 370531162}
   - component: {fileID: 370531161}
+  - component: {fileID: 370531164}
   m_Layer: 0
   m_Name: Sphere (10)
   m_TagString: Untagged
@@ -7063,10 +7156,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370531159}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &370531162
 MeshRenderer:
@@ -7117,6 +7210,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370531159}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &370531164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370531159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &372404718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
@@ -8060,6 +8168,8 @@ GameObject:
   - component: {fileID: 445828902}
   - component: {fileID: 445828906}
   - component: {fileID: 445828905}
+  - component: {fileID: 445828907}
+  - component: {fileID: 445828908}
   m_Layer: 0
   m_Name: Enemy Large Forest
   m_TagString: Enemy
@@ -8124,7 +8234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &445828906
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -8135,7 +8245,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -8147,6 +8257,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &445828907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445828901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &445828908
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445828901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &448592863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9424,6 +9562,8 @@ GameObject:
   - component: {fileID: 519514388}
   - component: {fileID: 519514392}
   - component: {fileID: 519514391}
+  - component: {fileID: 519514393}
+  - component: {fileID: 519514394}
   m_Layer: 0
   m_Name: Enemy End Turned Van
   m_TagString: Enemy
@@ -9488,7 +9628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &519514392
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9499,7 +9639,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -9511,6 +9651,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &519514393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519514387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &519514394
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519514387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &520374162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15156,7 +15324,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853553266}
-  m_LocalRotation: {x: -0.00003197636, y: 0.9924434, z: -0.12270345, w: -0.0002586295}
+  m_LocalRotation: {x: -0.000031598614, y: 0.9924434, z: -0.12270345, w: -0.0002555742}
   m_LocalPosition: {x: 170.39, y: 2.76, z: 27.788136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -16853,6 +17021,7 @@ GameObject:
   - component: {fileID: 957092362}
   - component: {fileID: 957092361}
   - component: {fileID: 957092360}
+  - component: {fileID: 957092363}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Untagged
@@ -16882,10 +17051,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957092358}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &957092361
 MeshRenderer:
@@ -16936,6 +17105,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957092358}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &957092363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957092358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &969816448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 1989787f5d4f08647a723f7cb7df5f05, type: 3}
@@ -18989,6 +19173,7 @@ GameObject:
   - component: {fileID: 1074550508}
   - component: {fileID: 1074550507}
   - component: {fileID: 1074550506}
+  - component: {fileID: 1074550509}
   m_Layer: 0
   m_Name: Sphere (7)
   m_TagString: Untagged
@@ -19018,10 +19203,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074550504}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1074550507
 MeshRenderer:
@@ -19072,6 +19257,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074550504}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1074550509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074550504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &1080764637 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
@@ -21195,6 +21395,7 @@ GameObject:
   - component: {fileID: 1172040057}
   - component: {fileID: 1172040056}
   - component: {fileID: 1172040055}
+  - component: {fileID: 1172040058}
   m_Layer: 0
   m_Name: Sphere (6)
   m_TagString: Untagged
@@ -21224,10 +21425,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172040053}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1172040056
 MeshRenderer:
@@ -21278,6 +21479,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1172040053}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1172040058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172040053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &1172788050 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
@@ -22261,6 +22477,8 @@ GameObject:
   - component: {fileID: 1205941491}
   - component: {fileID: 1205941495}
   - component: {fileID: 1205941494}
+  - component: {fileID: 1205941496}
+  - component: {fileID: 1205941497}
   m_Layer: 0
   m_Name: Enemy Sign
   m_TagString: Enemy
@@ -22325,7 +22543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &1205941495
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -22336,7 +22554,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -22348,6 +22566,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1205941496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205941490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &1205941497
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205941490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1214082137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 1989787f5d4f08647a723f7cb7df5f05, type: 3}
@@ -24675,6 +24921,8 @@ GameObject:
   - component: {fileID: 1365096684}
   - component: {fileID: 1365096688}
   - component: {fileID: 1365096687}
+  - component: {fileID: 1365096689}
+  - component: {fileID: 1365096690}
   m_Layer: 0
   m_Name: Enemy Small Forest Ally
   m_TagString: Enemy
@@ -24739,7 +24987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &1365096688
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24750,7 +24998,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -24762,6 +25010,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1365096689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365096683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &1365096690
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365096683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1365645069
 GameObject:
   m_ObjectHideFlags: 0
@@ -25040,6 +25316,8 @@ GameObject:
   - component: {fileID: 1384737935}
   - component: {fileID: 1384737937}
   - component: {fileID: 1384737936}
+  - component: {fileID: 1384737938}
+  - component: {fileID: 1384737939}
   m_Layer: 0
   m_Name: ' Enemy Large Forest Entrance'
   m_TagString: Enemy
@@ -25104,7 +25382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &1384737937
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -25115,7 +25393,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -25127,6 +25405,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1384737938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384737932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &1384737939
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384737932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1387089814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
@@ -26298,6 +26604,7 @@ GameObject:
   - component: {fileID: 1447160175}
   - component: {fileID: 1447160174}
   - component: {fileID: 1447160173}
+  - component: {fileID: 1447160176}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Untagged
@@ -26327,10 +26634,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447160171}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1447160174
 MeshRenderer:
@@ -26381,6 +26688,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447160171}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1447160176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447160171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &1452683682
 GameObject:
   m_ObjectHideFlags: 0
@@ -26657,6 +26979,7 @@ GameObject:
   - component: {fileID: 1463567759}
   - component: {fileID: 1463567758}
   - component: {fileID: 1463567757}
+  - component: {fileID: 1463567760}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -26686,10 +27009,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463567755}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1463567758
 MeshRenderer:
@@ -26740,6 +27063,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463567755}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1463567760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463567755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &1464331205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
@@ -27516,7 +27854,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499793218}
-  m_LocalRotation: {x: -0.00003197636, y: 0.9924434, z: -0.12270345, w: -0.0002586295}
+  m_LocalRotation: {x: -0.000031598614, y: 0.9924434, z: -0.12270345, w: -0.0002555742}
   m_LocalPosition: {x: 170.39, y: 2.76, z: 27.788136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -27619,6 +27957,8 @@ GameObject:
   - component: {fileID: 1507212469}
   - component: {fileID: 1507212473}
   - component: {fileID: 1507212472}
+  - component: {fileID: 1507212474}
+  - component: {fileID: 1507212475}
   m_Layer: 0
   m_Name: Enemy Medium Forest
   m_TagString: Enemy
@@ -27683,7 +28023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &1507212473
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27694,7 +28034,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -27706,6 +28046,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1507212474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507212468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &1507212475
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507212468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1507740162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
@@ -32503,7 +32871,7 @@ GameObject:
   - component: {fileID: 1767313472}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35401,6 +35769,8 @@ GameObject:
   - component: {fileID: 1926186548}
   - component: {fileID: 1926186552}
   - component: {fileID: 1926186551}
+  - component: {fileID: 1926186553}
+  - component: {fileID: 1926186554}
   m_Layer: 0
   m_Name: Enemy Car Block
   m_TagString: Enemy
@@ -35465,7 +35835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 600572868}
   targets: {fileID: 1562763263}
-  tolarenceValue: 3
+  dangerLevel: {fileID: 0}
 --- !u!195 &1926186552
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -35476,7 +35846,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -35488,6 +35858,34 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1926186553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926186547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
+--- !u!135 &1926186554
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926186547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 20
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1926297482
 GameObject:
   m_ObjectHideFlags: 0
@@ -36467,6 +36865,7 @@ GameObject:
   - component: {fileID: 1972334501}
   - component: {fileID: 1972334500}
   - component: {fileID: 1972334499}
+  - component: {fileID: 1972334502}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -36496,10 +36895,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972334497}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1972334500
 MeshRenderer:
@@ -36550,6 +36949,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972334497}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1972334502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972334497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1001 &1972632436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36860,6 +37274,7 @@ GameObject:
   - component: {fileID: 1990028802}
   - component: {fileID: 1990028801}
   - component: {fileID: 1990028800}
+  - component: {fileID: 1990028803}
   m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Untagged
@@ -36889,10 +37304,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990028798}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1990028801
 MeshRenderer:
@@ -36943,6 +37358,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990028798}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1990028803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990028798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1001 &1993216680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38116,6 +38546,7 @@ GameObject:
   - component: {fileID: 2081353735}
   - component: {fileID: 2081353734}
   - component: {fileID: 2081353733}
+  - component: {fileID: 2081353736}
   m_Layer: 0
   m_Name: Sphere (8)
   m_TagString: Untagged
@@ -38145,10 +38576,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081353731}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2081353734
 MeshRenderer:
@@ -38199,6 +38630,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081353731}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2081353736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081353731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9840add23e226409751f9da2e0f2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yellowThreshHold: 22
+  redThreshHold: 10
+  dangerLevel: 
 --- !u!1 &2083244788 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
