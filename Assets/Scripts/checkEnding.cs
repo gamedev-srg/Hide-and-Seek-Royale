@@ -20,8 +20,14 @@ public class checkEnding : MonoBehaviour
         aliveNumber--;
         if (aliveNumber <= 0)
         {
-            //if all children are read game is over.
-            SceneManager.LoadScene("HunterWin");
+            if(SceneManager.GetActiveScene().name == "Demo"){
+                SceneManager.LoadScene("eDemo");
+            }else{
+                 //if all children are read game is over.
+                SceneManager.LoadScene("Win");
+            }
+           
+
         }
     }
 }

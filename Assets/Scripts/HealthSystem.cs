@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -57,7 +58,7 @@ public class HealthSystem : MonoBehaviour
         }
         else if (tag == "Player")
         {
-            Application.Quit();
+            SceneManager.LoadScene("Lose");
         }
         this.enabled = false;
     }

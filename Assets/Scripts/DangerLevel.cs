@@ -25,6 +25,7 @@ public class DangerLevel : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            Debug.Log(Vector3.Distance(other.transform.position,transform.position));
             flagEnter = true;
             StartCoroutine(updateDangerLevel(other));
             Debug.Log("entered danger zone");

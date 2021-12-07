@@ -12,10 +12,12 @@ public class EnemyMover : MonoBehaviour
     HealthSystem healthSystem;
     [SerializeField] DangerLevel dangerLevel;
     DangerLevel targetLevel;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         dangerLevel = GetComponent<DangerLevel>();
         targetList = targets.GetComponentsInChildren<Transform>();
@@ -51,6 +53,12 @@ public class EnemyMover : MonoBehaviour
         if(dangerLevel.getDangerLevel() == "yellow")
         { 
             navMeshAgent.SetDestination(FindNearestSafeTarget(targetList).position);
+        }
+        if(navMeshAgent.hasPath){
+            Debug.Log("adsdsadsaa");
+            animator.SetFloat("speed", navMeshAgent.speed);
+        }else{
+           animator.SetFloat("speed", 0); 
         }
     }
 }
