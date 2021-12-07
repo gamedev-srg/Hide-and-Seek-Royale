@@ -10,6 +10,9 @@ Click [Here](https://g-r-s.itch.io/hidenseek) for the itch.io page of the game.
 
 
 ## The game
+### Recently Added:
+* we recently added a Demo!
+* added a main menu, and for each type of win/lose added a new widnow accordingly
 ### Roles:
 * Hiders - All hiders have the same goal, to hide from the Hunter, and place traps for him, or fellow hiders. you do want to be the last one left after all.
 * Hunter - These only one of you. your job is to find every last hider, but you need to be careful, as they can place traps in startegic locations to try and bring you down.
