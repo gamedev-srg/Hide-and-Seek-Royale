@@ -37,11 +37,11 @@ public class PlayerMovement : MonoBehaviour
         {
             var xAxisMouse = Input.GetAxis("Mouse X");
             var zAxis = Input.GetAxis("Vertical");
-            //var xShuffle = Input.GetAxis("Horizontal");
+            var xShuffle = Input.GetAxis("Horizontal");
             var movmentVector = new Vector3(xAxisMouse, 0, zAxis);
             animator.SetFloat("speed", movmentVector.magnitude);
             //used for AD movment but it didn't work well.
-            //characterController.SimpleMove(xShuffle * transform.right * speedToUse);
+            characterController.SimpleMove(xShuffle * transform.right * speedToUse);
             //rotate with mouse
             transform.Rotate(Vector3.up, xAxisMouse * rotationSpeed * Time.deltaTime);
             if (xAxisMouse != 0 && zAxis == 0)
@@ -54,12 +54,8 @@ public class PlayerMovement : MonoBehaviour
                 {
                     animator.SetBool("rotating", false);
                 }
-            }
-
-            if (zAxis != 0) //if zed is pressed, move forward using charactercontroller's simplemove (Don't really need to if here, beczue zAxis = 0 otherwise)
-            {
-                characterController.SimpleMove(transform.forward * speedToUse * zAxis);
-            }
+            }          
+            characterController.SimpleMove(transform.forward * speedToUse * zAxis);       
             //this is to sprint when holding leftshift.
             if (Input.GetKey(KeyCode.LeftShift))
             {
