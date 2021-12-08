@@ -6,7 +6,7 @@ This is a revolutionary Hide and Seek Battle Royale game! Be the seeker or a run
 
 Click [here](https://github.com/gamedev-srg/Hide-and-Seek-Royale/blob/main/formal-elements.md) for a detailed description of the game..
 
-Click [Here](https://g-r-s.itch.io/hidenseek) for the itch.io page of the game.
+Click [Here](https://g-r-s.itch.io/hnsr) for the itch.io page of the game.
 
 
 ## The game
