@@ -74,13 +74,13 @@
 
 In HNS the player has a direct and in-direct control over the course of the game. Both of which has a **real-time** impact over the course of the game.
 
-    * **Direct**
+* **Direct**
 
-        > Players control the game directly by catching runners with their stick. This has a direct effect over the course of the game and other player because they can see that on of the players was eliminated and feel the danger.
+    > Players control the game directly by catching runners with their stick. This has a direct effect over the course of the game and other player because they can see that on of the players was eliminated and feel the danger.
 
-    * **In-Direct**
+* **In-Direct**
 
-        > Players can in-directly control the game via the trap system. By laying traps on the floor the player can make other players lost not by directly engaging them but by in-directly showing them the way out. 
+    > Players can in-directly control the game via the trap system. By laying traps on the floor the player can make other players lost not by directly engaging them but by in-directly showing them the way out. 
 
 ## 7. :mortar_board: **Choices and Strategy**:
 
