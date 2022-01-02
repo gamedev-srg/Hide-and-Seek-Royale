@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,17 +7,22 @@ using UnityEngine.AI;
 public class EnemyMover : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
+    //lock the script from constantly changing currentUnitAtTarget.
+    public bool locked = false;
     [SerializeField] GameObject player;
     [SerializeField] GameObject targets;
     private Transform[] targetList;
     HealthSystem healthSystem;
     [SerializeField] DangerLevel dangerLevel;
     DangerLevel targetLevel;
+    GameObject lastTarget;
+  
     Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+       
         animator = GetComponentInChildren<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         dangerLevel = GetComponent<DangerLevel>();
@@ -33,16 +39,19 @@ public class EnemyMover : MonoBehaviour
             if (target.GetComponent<DangerLevel>())
             {
                 currentLevel = target.GetComponent<DangerLevel>().dangerLevel;
-                Debug.Log(target.name + currentLevel);
-                if ((curr_distance < min_distance) && currentLevel.Equals("green"))
+                TargetAvailability availability = target.gameObject.GetComponent<TargetAvailability>();
+                bool isAvailable = availability.isAvailable(target.gameObject);
+                if ((curr_distance < min_distance) && currentLevel.Equals("green") && isAvailable)
                 {
                     min_distance = curr_distance;
                     min_target = target;
                 }
             }
         }
+       
         return min_target;
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -53,9 +62,10 @@ public class EnemyMover : MonoBehaviour
         if(dangerLevel.getDangerLevel() == "yellow")
         { 
             navMeshAgent.SetDestination(FindNearestSafeTarget(targetList).position);
+
         }
         if(navMeshAgent.hasPath){
-            Debug.Log("adsdsadsaa");
+
             animator.SetFloat("speed", navMeshAgent.speed);
         }else{
            animator.SetFloat("speed", 0); 

@@ -9,11 +9,21 @@ public class DangerLevel : MonoBehaviour
     public float redThreshHold = 10f;
     public string dangerLevel;
     private float timeBetweenChecks = 1f;
+    [SerializeField] bool isVisible = false;
     bool flagEnter = false;
     // Start is called before the first frame update
     void Start()
     {
         dangerLevel = "green";
+    }
+
+    //LOS = Line Of Sight
+    //checks if the target is in LineOfSight of the enemy
+    bool isInLos()
+    {
+        isVisible = GetComponentInChildren<Renderer>().isVisible;
+        return isVisible;
+      
     }
 
     public string getDangerLevel()
@@ -61,7 +71,6 @@ public class DangerLevel : MonoBehaviour
                 dangerLevel = "green";
                 flagEnter = false;
             }
-                
             yield return new WaitForSeconds(timeBetweenChecks);
         }
     }
