@@ -9,10 +9,13 @@ public class EnemyMover : MonoBehaviour
     NavMeshAgent navMeshAgent;
     //lock the script from constantly changing currentUnitAtTarget.
     public bool locked = false;
+    [Tooltip("Player Object for the enemy mover")]
     [SerializeField] GameObject player;
+    [Tooltip("Target Objects for the enemy mover")]
     [SerializeField] GameObject targets;
     private Transform[] targetList;
     HealthSystem healthSystem;
+    [Tooltip("Danger level for the enemy mover")]
     [SerializeField] DangerLevel dangerLevel;
     DangerLevel targetLevel;
     GameObject lastTarget;
