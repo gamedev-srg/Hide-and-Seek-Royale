@@ -15,11 +15,12 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("Player value switch between regulart and sprinting speed")]
     [SerializeField] private float speedToUse;
     private HealthSystem healthSystem;
+    private Fire fireSystem;
 
     void Start()
     {
-     
         healthSystem = GetComponent<HealthSystem>();
+        fireSystem = GetComponent<Fire>();
         //start with normal speed
         speedToUse = movementSpeed;
         //sprinting speed is double the normal speed.
@@ -79,6 +80,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 speedToUse = movementSpeed;
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "magazine")
+        {
+            fireSystem.addAmmo();
+            Destroy(other.gameObject);
         }
     }
 }

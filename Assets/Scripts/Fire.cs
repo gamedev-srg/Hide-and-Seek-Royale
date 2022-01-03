@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fire : MonoBehaviour
 {
@@ -12,24 +13,34 @@ public class Fire : MonoBehaviour
     [SerializeField] private float fireRate = 5;
     [Tooltip("Weapon damage, each point is equal to a player health point")]
     [SerializeField] private int damage = 1;
+    [Tooltip("Amount of ammunition in magazine")]
+    [SerializeField] private const int magazineSize = 10;
     private float nextFireTime;
     [Tooltip("Muzzle flash display object")]
     [SerializeField] ParticleSystem muzzleFlash;
     Animator animator;
+    [Tooltip("Weapon's ammunition")]
+    [SerializeField] private int ammunition = 30;
+    [Tooltip("Text Object to change ammunition")]
+    [SerializeField] Text ammoText;
 
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        ammoText.text = "Ammo: " + ammunition.ToString();
     }
 
     void Update()
     {
         if (Time.time >= nextFireTime)
         {   
-            if (Input.GetButton("Fire1"))
-            { //mouse left and ctrl to  shoot
+            if (Input.GetButton("Fire1") && ammunition > 0)
+            { 
+                //mouse left and ctrl to  shoot
                 Shoot();
                 nextFireTime = Time.time + fireRate;
+                ammunition--;
+                ammoText.text = "Ammo: " + ammunition.ToString();
             }
         }
     }
@@ -52,5 +63,11 @@ public class Fire : MonoBehaviour
                 healthSystem.takeDamge(damage);
             }
         }
+    }
+
+    public void addAmmo()
+    {
+        ammunition += magazineSize;
+        ammoText.text = "Ammo: " + ammunition.ToString();
     }
 }
