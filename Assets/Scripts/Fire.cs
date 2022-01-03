@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fire : MonoBehaviour
 {
@@ -16,20 +17,28 @@ public class Fire : MonoBehaviour
     [Tooltip("Muzzle flash display object")]
     [SerializeField] ParticleSystem muzzleFlash;
     Animator animator;
+    [Tooltip("Weapon's ammunition")]
+    [SerializeField] private int ammunition = 30;
+    [Tooltip("Text Object to change ammunition")]
+    [SerializeField] Text ammoText;
 
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        ammoText.text = "Ammo: " + ammunition.ToString();
     }
 
     void Update()
     {
         if (Time.time >= nextFireTime)
         {   
-            if (Input.GetButton("Fire1"))
-            { //mouse left and ctrl to  shoot
+            if (Input.GetButton("Fire1") && ammunition > 0)
+            { 
+                //mouse left and ctrl to  shoot
                 Shoot();
                 nextFireTime = Time.time + fireRate;
+                ammunition--;
+                ammoText.text = "Ammo: " + ammunition.ToString();
             }
         }
     }
