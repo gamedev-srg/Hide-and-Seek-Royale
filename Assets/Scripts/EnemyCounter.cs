@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class counter : MonoBehaviour
+public class EnemyCounter : MonoBehaviour
 {
     [SerializeField] Text text;
     private List<Transform> enemies;
@@ -21,17 +21,22 @@ public class counter : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        foreach(Transform child in enemies)
+        Transform tchild = null;
+        foreach (Transform child in enemies)
         {
             HealthSystem temp = child.GetComponent<HealthSystem>();
-            if( ! temp.enabled){
+            if (!temp.enabled)
+            {
                 numofE--;
-                enemies.Remove(child);
+                tchild = child;
             }
         }
-       text.text ="Enemies left: " + numofE.ToString();
+        if (tchild != null && enemies.Contains(tchild))
+        {
+            enemies.Remove(tchild);
+        }
+        text.text = "Enemies: " + numofE.ToString();
     }
 }
