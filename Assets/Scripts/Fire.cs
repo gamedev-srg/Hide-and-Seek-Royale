@@ -13,6 +13,8 @@ public class Fire : MonoBehaviour
     [SerializeField] private float fireRate = 5;
     [Tooltip("Weapon damage, each point is equal to a player health point")]
     [SerializeField] private int damage = 1;
+    [Tooltip("Amount of ammunition in magazine")]
+    [SerializeField] private const int magazineSize = 10;
     private float nextFireTime;
     [Tooltip("Muzzle flash display object")]
     [SerializeField] ParticleSystem muzzleFlash;
@@ -61,5 +63,11 @@ public class Fire : MonoBehaviour
                 healthSystem.takeDamge(damage);
             }
         }
+    }
+
+    public void addAmmo()
+    {
+        ammunition += magazineSize;
+        ammoText.text = "Ammo: " + ammunition.ToString();
     }
 }
