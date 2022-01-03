@@ -23,7 +23,6 @@ public class Fire : MonoBehaviour
     [SerializeField] private int ammunition = 30;
     [Tooltip("Text Object to change ammunition")]
     [SerializeField] Text ammoText;
-
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -52,16 +51,28 @@ public class Fire : MonoBehaviour
         animator.SetTrigger("attack");
         //ry from main camera to where i'm looking in my reticle, this will be the path of the bullet
         Ray ray = Camera.main.ViewportPointToRay(Vector3.one * cameraOffset);
-        //Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
+        Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
         RaycastHit hitInfo;
         //if ray hit something with a heatlh System, damage it.
         if(Physics.Raycast(ray, out hitInfo, maxRayDistance))
         {
-            var healthSystem = hitInfo.collider.GetComponent<HealthSystem>();
-            if (healthSystem)
+            string firstHitName = "";
+            if (firstHitName == "")
             {
-                healthSystem.takeDamge(damage);
+                firstHitName = hitInfo.collider.gameObject.name;
+                Debug.Log(firstHitName);
             }
+            if (firstHitName.Contains("Enemy"))
+            {
+                Debug.Log("reached enemy");
+                var healthSystem = hitInfo.collider.GetComponent<HealthSystem>();
+                if (healthSystem)
+                {
+                    healthSystem.takeDamge(damage);
+                }
+            }
+                
+            
         }
     }
 

@@ -11,7 +11,7 @@ public class TargetAvailability : MonoBehaviour
     public float timeToWait = 1.5f;
     Transform[] enemyList;
 
-     float minDistance = 2f;
+     float minDistance = 0.3f;
     // Start is called before the first frame update
     void Start()
     {
