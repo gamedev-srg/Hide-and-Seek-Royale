@@ -24,13 +24,17 @@ public class counter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Transform tchild = null;
         foreach(Transform child in enemies)
         {
             HealthSystem temp = child.GetComponent<HealthSystem>();
             if( ! temp.enabled){
                 numofE--;
-                enemies.Remove(child);
+                tchild = child;
             }
+        }
+        if( tchild !=null && enemies.Contains(tchild)){
+            enemies.Remove(tchild);
         }
        text.text ="Enemies left: " + numofE.ToString();
     }
