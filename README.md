@@ -10,6 +10,8 @@ Click [Here](https://g-r-s.itch.io/hnsr) for the itch.io page of the game.
 
 
 ## The game
+### Introduction
+* Hide and Seek Royal is a childhood dream of ours! ever sence we were little and played with our friend hide and seek in the park. so we decided to develop this game! venture into a simulated version of Hide and Seek in a Battle Royal theme. Set traps to finish off the enemies and find more ammunition for your gun!
 ### Recently Added:
 * we recently added a Demo!
 * added a main menu, and for each type of win/lose added a new widnow accordingly
