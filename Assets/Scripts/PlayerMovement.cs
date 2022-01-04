@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         if (healthSystem.currentHealth > 0)
         {
             var xAxisMouse = Input.GetAxis("Mouse X")*webGlOffset;
-            var zAxis = Input.GetAxis("Vertical")*webGlOffset;
+            var zAxis = Input.GetAxis("Vertical");
             var xShuffle = Input.GetAxis("Horizontal");
             var movmentVector = new Vector3(0f,0f,0f);
             if( xAxisMouse != 0){
