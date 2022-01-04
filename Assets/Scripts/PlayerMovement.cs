@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
     private HealthSystem healthSystem;
     private Fire fireSystem;
 
+    //webGL builds double your normal mouse sensitivity making it near impossible to control
+    private float webGlOffset = 0.5f;
+
     void Start()
     {
         healthSystem = GetComponent<HealthSystem>();
@@ -43,8 +46,8 @@ public class PlayerMovement : MonoBehaviour
         //only move if you're not dead.
         if (healthSystem.currentHealth > 0)
         {
-            var xAxisMouse = Input.GetAxis("Mouse X");
-            var zAxis = Input.GetAxis("Vertical");
+            var xAxisMouse = Input.GetAxis("Mouse X")*webGlOffset;
+            var zAxis = Input.GetAxis("Vertical")*webGlOffset;
             var xShuffle = Input.GetAxis("Horizontal");
             var movmentVector = new Vector3(0f,0f,0f);
             if( xAxisMouse != 0){
