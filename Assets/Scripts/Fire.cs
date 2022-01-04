@@ -56,13 +56,15 @@ public class Fire : MonoBehaviour
         //if ray hit something with a heatlh System, damage it.
         if(Physics.Raycast(ray, out hitInfo, maxRayDistance))
         {
+            //check if we hit something that isn't an enemy hit wont register
             string firstHitName = "";
             if (firstHitName == "")
             {
                 firstHitName = hitInfo.collider.gameObject.name;
                 Debug.Log(firstHitName);
             }
-            if (firstHitName.Contains("Enemy"))
+            //unless we hit an invisble object for game logic and So you can shoot through tress 
+            if (firstHitName.Contains("Enemy") || firstHitName.Contains("Sphere") || firstHitName.Contains("Terrain"))
             {
                 Debug.Log("reached enemy");
                 var healthSystem = hitInfo.collider.GetComponent<HealthSystem>();

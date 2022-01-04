@@ -25,7 +25,7 @@ public class SpawnTrap : MonoBehaviour
         trapIndicator.GetComponent<MeshRenderer>().enabled = true;
     }
 
-    private GameObject Spawn() //spawn the trap 
+    public GameObject Spawn() //spawn the trap 
     {
         
         Vector3 positionOfSpawnedObject = transform.position;

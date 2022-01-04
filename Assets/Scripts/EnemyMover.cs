@@ -18,18 +18,22 @@ public class EnemyMover : MonoBehaviour
     [Tooltip("Danger level for the enemy mover")]
     [SerializeField] DangerLevel dangerLevel;
     DangerLevel targetLevel;
-    GameObject lastTarget;
+    Transform lastTarget;
     Vector3 startingPos;
+ 
     Animator animator;
     [SerializeField] float startingSpeed;
+    SpawnTrap trap;
     bool redTargetLock = false;
     float speedToUse;
     float redSpeedIncrease = 1.2f;
-    [SerializeField] public float maxDistance = 45f; 
+    [SerializeField] public float maxDistance = 45f;
+    private float timeBeforeTrap = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        trap = GetComponent<SpawnTrap>();
         startingPos = transform.position;
         animator = GetComponentInChildren<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -46,13 +50,13 @@ public class EnemyMover : MonoBehaviour
         return true;
     }
 
-    
+
     Transform FindNearestSafeTarget(Transform[] targetList)
     {
         string currentLevel = "";
         float min_distance = float.MaxValue;
         Transform min_target = targetList[1]; //arbitrary, will likely change later.
-        foreach(Transform target in targetList)
+        foreach (Transform target in targetList)
         {
             float curr_distance = Vector3.Distance(transform.position, target.transform.position);
             var targetDanger = target.GetComponent<DangerLevel>();
@@ -61,17 +65,18 @@ public class EnemyMover : MonoBehaviour
                 currentLevel = target.GetComponent<DangerLevel>().dangerLevel;
                 TargetAvailability availability = target.gameObject.GetComponent<TargetAvailability>();
                 bool isAvailable = availability.isAvailable(target.gameObject);
-                
+
                 //if target is the closest (disregrard LOS), and is safe in terms of color, and it is free of other players and it's in the radius
                 if ((curr_distance < min_distance) && currentLevel.Equals("green") && isAvailable && inRadius(target) && !targetDanger.isVisible)
                 {
-                    
+
                     min_distance = curr_distance;
                     min_target = target;
                 }
             }
         }
         Debug.Log(this.name + " is at danger level " + dangerLevel.dangerLevel + " current target is " + min_target);
+        lastTarget = min_target;
         return min_target;
     }
     Transform FindNearestTargetNotInSight(Transform[] targetList)
@@ -89,7 +94,7 @@ public class EnemyMover : MonoBehaviour
                 TargetAvailability availability = target.gameObject.GetComponent<TargetAvailability>();
                 bool isAvailable = availability.isAvailable(target.gameObject);
 
-        
+
                 if ((curr_distance < min_distance) && isAvailable && !targetDanger.isVisible && inRadius(target))
                 {
 
@@ -99,6 +104,7 @@ public class EnemyMover : MonoBehaviour
             }
         }
         Debug.Log(this.name + " is at danger level " + dangerLevel + " current target is " + min_target);
+        lastTarget = min_target;
         return min_target;
     }
 
@@ -111,7 +117,7 @@ public class EnemyMover : MonoBehaviour
         {
             var targetDanger = target.GetComponent<DangerLevel>();
             if (targetDanger)
-            { 
+            {
                 currentLevel = target.GetComponent<DangerLevel>().dangerLevel;
                 TargetAvailability availability = target.gameObject.GetComponent<TargetAvailability>();
                 bool isAvailable = availability.isAvailable(target.gameObject);
@@ -127,9 +133,15 @@ public class EnemyMover : MonoBehaviour
         int randomOkIndex = UnityEngine.Random.Range(0, okTargets.Count);
         min_target = targetList[randomOkIndex];
         Debug.Log(this.name + " is at danger level " + dangerLevel + " current target is " + min_target);
+        lastTarget = min_target;
         return min_target;
     }
 
+    private IEnumerator spawnTrap(SpawnTrap trap)
+    {
+        yield return new WaitForSeconds(timeBeforeTrap);
+        trap.Spawn();
+    }
 
     // Update is called once per frame
     void Update()
@@ -143,6 +155,8 @@ public class EnemyMover : MonoBehaviour
             if (!redTargetLock)
             {
                 navMeshAgent.SetDestination(FindSafeTargetNotRed(targetList).position);
+                Debug.Log("In red zone");
+                //StartCoroutine(spawnTrap(trap));
             }
             redTargetLock = true;
         }
@@ -152,6 +166,7 @@ public class EnemyMover : MonoBehaviour
             speedToUse = startingSpeed;
             navMeshAgent.speed = speedToUse;
             navMeshAgent.SetDestination(FindNearestTargetNotInSight(targetList).position);
+          //  StartCoroutine(spawnTrap(trap));
         }
         //if he close and he can see me, I just want to get farther away
         if (dangerLevel.getDangerLevel() == "yellow")
@@ -159,13 +174,25 @@ public class EnemyMover : MonoBehaviour
             speedToUse = startingSpeed;
             navMeshAgent.speed = speedToUse;
             navMeshAgent.SetDestination(FindNearestSafeTarget(targetList).position);
+            
         }
+
+        if (lastTarget)
+        {
+            if (transform.position == lastTarget.position)
+            {
+                redTargetLock = false;
+                Debug.Log("red unlocked");
+
+            }
+        }
+
         if(navMeshAgent.hasPath){
 
             animator.SetFloat("speed", navMeshAgent.speed);
         }else{
            animator.SetFloat("speed", 0);
-            redTargetLock = false;
+            
         }
     }
 }
