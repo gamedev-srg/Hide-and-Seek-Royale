@@ -20,13 +20,15 @@ public class Fire : MonoBehaviour
     [SerializeField] ParticleSystem muzzleFlash;
     Animator animator;
     [Tooltip("Weapon's ammunition")]
-    [SerializeField] private int ammunition = 30;
+    [SerializeField] private int ammunition = 15;
     [Tooltip("Text Object to change ammunition")]
     [SerializeField] Text ammoText;
+
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
         ammoText.text = "Ammo: " + ammunition.ToString();
+        ammoText.color = Color.black;
     }
 
     void Update()
@@ -40,7 +42,13 @@ public class Fire : MonoBehaviour
                 nextFireTime = Time.time + fireRate;
                 ammunition--;
                 ammoText.text = "Ammo: " + ammunition.ToString();
+                ammoText.color = Color.black;
             }
+        }
+        if (ammunition <= 0)
+        {
+            ammoText.text = "Out Of Ammo";
+            ammoText.color = Color.red;
         }
     }
 
@@ -82,5 +90,6 @@ public class Fire : MonoBehaviour
     {
         ammunition += magazineSize;
         ammoText.text = "Ammo: " + ammunition.ToString();
+        ammoText.color = Color.black;
     }
 }
