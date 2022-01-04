@@ -9,12 +9,14 @@ public class DangerLevel : MonoBehaviour
     public float redThreshHold = 10f;
     public string dangerLevel;
     private float timeBetweenChecks = 1f;
+    [SerializeField] GameObject DangerCause;
     [SerializeField]public bool isVisible = false;
     bool flagEnter = false;
     // Start is called before the first frame update
     void Start()
     {
         dangerLevel = "green";
+        StartCoroutine(updateDangerLevel(DangerCause));
     }
 
     //LOS = Line Of Sight
@@ -25,35 +27,22 @@ public class DangerLevel : MonoBehaviour
       
         return dangerLevel; 
     }
-    private void OnTriggerEnter(Collider other)
+
+           
+          
+        
+    
+   
+    private IEnumerator updateDangerLevel(GameObject other)
     {
-        if(other.tag == "Player")
+        while (true)
         {
-            Debug.Log(Vector3.Distance(other.transform.position,transform.position));
-            flagEnter = true;
-            StartCoroutine(updateDangerLevel(other));
-            Debug.Log("entered danger zone");
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.tag == "Player")
-        {
-            flagEnter = false;
-            dangerLevel = "green";
-            Debug.Log("exited danger zone");
-        }
-    }
-    private IEnumerator updateDangerLevel(Collider other)
-    {
-        while (flagEnter)
-        { 
             float distance = Vector3.Distance(this.transform.position, other.transform.position);
-            //Debug.Log(distance);
+            Debug.Log(distance);
             if (distance < redThreshHold)
             {
                 dangerLevel = "red";
-               
+
             }
             else if (distance < yellowThreshHold)
             {
@@ -67,11 +56,6 @@ public class DangerLevel : MonoBehaviour
             }
             yield return new WaitForSeconds(timeBetweenChecks);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }

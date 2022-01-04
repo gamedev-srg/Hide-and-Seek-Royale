@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44626045, g: 0.4960512, b: 0.5746214, a: 1}
+  m_IndirectSpecularColor: {r: 0.4462601, g: 0.49605066, b: 0.57462037, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -395,7 +395,6 @@ GameObject:
   - component: {fileID: 258157}
   - component: {fileID: 258162}
   - component: {fileID: 258161}
-  - component: {fileID: 258160}
   - component: {fileID: 258159}
   - component: {fileID: 258158}
   m_Layer: 0
@@ -450,20 +449,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &258160
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258156}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &258161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -768,7 +755,6 @@ GameObject:
   - component: {fileID: 9302060}
   - component: {fileID: 9302065}
   - component: {fileID: 9302064}
-  - component: {fileID: 9302063}
   - component: {fileID: 9302062}
   - component: {fileID: 9302061}
   m_Layer: 0
@@ -823,20 +809,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &9302063
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9302059}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &9302064
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2331,7 +2305,6 @@ GameObject:
   - component: {fileID: 105648801}
   - component: {fileID: 105648806}
   - component: {fileID: 105648805}
-  - component: {fileID: 105648804}
   - component: {fileID: 105648803}
   - component: {fileID: 105648802}
   m_Layer: 0
@@ -2386,20 +2359,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &105648804
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105648800}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &105648805
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2563,7 +2524,6 @@ GameObject:
   - component: {fileID: 109865673}
   - component: {fileID: 109865678}
   - component: {fileID: 109865677}
-  - component: {fileID: 109865676}
   - component: {fileID: 109865675}
   - component: {fileID: 109865674}
   m_Layer: 0
@@ -2618,20 +2578,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &109865676
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109865672}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &109865677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3096,7 +3044,6 @@ GameObject:
   - component: {fileID: 127840144}
   - component: {fileID: 127840149}
   - component: {fileID: 127840148}
-  - component: {fileID: 127840147}
   - component: {fileID: 127840146}
   - component: {fileID: 127840145}
   m_Layer: 0
@@ -3151,20 +3098,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &127840147
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127840143}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &127840148
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3225,7 +3160,6 @@ GameObject:
   - component: {fileID: 131751017}
   - component: {fileID: 131751022}
   - component: {fileID: 131751021}
-  - component: {fileID: 131751020}
   - component: {fileID: 131751019}
   - component: {fileID: 131751018}
   m_Layer: 0
@@ -3280,20 +3214,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &131751020
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131751016}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &131751021
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3354,7 +3276,6 @@ GameObject:
   - component: {fileID: 134341701}
   - component: {fileID: 134341706}
   - component: {fileID: 134341705}
-  - component: {fileID: 134341704}
   - component: {fileID: 134341703}
   - component: {fileID: 134341702}
   m_Layer: 0
@@ -3409,20 +3330,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &134341704
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134341700}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &134341705
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4137,7 +4046,6 @@ GameObject:
   - component: {fileID: 168614271}
   - component: {fileID: 168614274}
   - component: {fileID: 168614273}
-  - component: {fileID: 168614272}
   - component: {fileID: 168614275}
   - component: {fileID: 168614276}
   m_Layer: 0
@@ -4161,19 +4069,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &168614272
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168614270}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &168614273
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4238,6 +4133,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &168614276
 MonoBehaviour:
@@ -5468,7 +5364,6 @@ GameObject:
   - component: {fileID: 225319048}
   - component: {fileID: 225319047}
   - component: {fileID: 225319046}
-  - component: {fileID: 225319045}
   m_Layer: 0
   m_Name: 'Enemy Starting '
   m_TagString: Enemy
@@ -5491,19 +5386,6 @@ Transform:
   m_Father: {fileID: 1918831138}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -3.505, y: -90, z: 0.172}
---- !u!135 &225319045
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225319043}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &225319046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5519,6 +5401,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &225319047
 MonoBehaviour:
@@ -5827,7 +5710,6 @@ GameObject:
   - component: {fileID: 230728748}
   - component: {fileID: 230728753}
   - component: {fileID: 230728752}
-  - component: {fileID: 230728751}
   - component: {fileID: 230728750}
   - component: {fileID: 230728749}
   m_Layer: 0
@@ -5882,20 +5764,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &230728751
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 230728747}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &230728752
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6062,7 +5932,6 @@ GameObject:
   - component: {fileID: 233799768}
   - component: {fileID: 233799773}
   - component: {fileID: 233799772}
-  - component: {fileID: 233799771}
   - component: {fileID: 233799770}
   - component: {fileID: 233799769}
   m_Layer: 0
@@ -6117,20 +5986,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &233799771
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233799767}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &233799772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6327,7 +6184,6 @@ GameObject:
   - component: {fileID: 240558497}
   - component: {fileID: 240558502}
   - component: {fileID: 240558501}
-  - component: {fileID: 240558500}
   - component: {fileID: 240558499}
   - component: {fileID: 240558498}
   m_Layer: 0
@@ -6382,20 +6238,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &240558500
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240558496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &240558501
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6456,7 +6300,6 @@ GameObject:
   - component: {fileID: 240829876}
   - component: {fileID: 240829881}
   - component: {fileID: 240829880}
-  - component: {fileID: 240829879}
   - component: {fileID: 240829878}
   - component: {fileID: 240829877}
   m_Layer: 0
@@ -6511,20 +6354,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &240829879
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240829875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &240829880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6690,7 +6521,6 @@ GameObject:
   - component: {fileID: 244841567}
   - component: {fileID: 244841572}
   - component: {fileID: 244841571}
-  - component: {fileID: 244841570}
   - component: {fileID: 244841569}
   - component: {fileID: 244841568}
   m_Layer: 0
@@ -6745,20 +6575,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &244841570
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244841566}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &244841571
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6926,7 +6744,6 @@ GameObject:
   - component: {fileID: 251999264}
   - component: {fileID: 251999269}
   - component: {fileID: 251999268}
-  - component: {fileID: 251999267}
   - component: {fileID: 251999266}
   - component: {fileID: 251999265}
   m_Layer: 0
@@ -6981,20 +6798,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &251999267
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251999263}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &251999268
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8309,7 +8114,6 @@ GameObject:
   - component: {fileID: 314861385}
   - component: {fileID: 314861390}
   - component: {fileID: 314861389}
-  - component: {fileID: 314861388}
   - component: {fileID: 314861387}
   - component: {fileID: 314861386}
   m_Layer: 0
@@ -8364,20 +8168,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &314861388
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 314861384}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &314861389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8750,7 +8542,6 @@ GameObject:
   - component: {fileID: 333040576}
   - component: {fileID: 333040579}
   - component: {fileID: 333040578}
-  - component: {fileID: 333040577}
   - component: {fileID: 333040580}
   - component: {fileID: 333040581}
   m_Layer: 0
@@ -8774,19 +8565,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &333040577
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333040575}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &333040578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8851,6 +8629,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &333040581
 MonoBehaviour:
@@ -8879,7 +8658,6 @@ GameObject:
   - component: {fileID: 334875463}
   - component: {fileID: 334875468}
   - component: {fileID: 334875467}
-  - component: {fileID: 334875466}
   - component: {fileID: 334875465}
   - component: {fileID: 334875464}
   m_Layer: 0
@@ -8934,20 +8712,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &334875466
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334875462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &334875467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9011,7 +8777,6 @@ GameObject:
   - component: {fileID: 338441989}
   - component: {fileID: 338441988}
   - component: {fileID: 338441990}
-  - component: {fileID: 338441991}
   m_Layer: 0
   m_Name: Enemy Medium Forest
   m_TagString: Enemy
@@ -9117,20 +8882,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &338441991
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338441984}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &341288402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
@@ -9375,7 +9128,6 @@ GameObject:
   - component: {fileID: 354759757}
   - component: {fileID: 354759756}
   - component: {fileID: 354759758}
-  - component: {fileID: 354759759}
   m_Layer: 0
   m_Name: Enemy Not Hidden
   m_TagString: Enemy
@@ -9481,20 +9233,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &354759759
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354759752}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &354879421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 8db24802b0170464c9267f3c45e6f7ea, type: 3}
@@ -9631,7 +9371,6 @@ GameObject:
   - component: {fileID: 363257971}
   - component: {fileID: 363257976}
   - component: {fileID: 363257975}
-  - component: {fileID: 363257974}
   - component: {fileID: 363257973}
   - component: {fileID: 363257972}
   m_Layer: 0
@@ -9686,20 +9425,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &363257974
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363257970}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &363257975
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9779,7 +9506,6 @@ GameObject:
   - component: {fileID: 368047400}
   - component: {fileID: 368047405}
   - component: {fileID: 368047404}
-  - component: {fileID: 368047403}
   - component: {fileID: 368047402}
   - component: {fileID: 368047401}
   m_Layer: 0
@@ -9834,20 +9560,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &368047403
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368047399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &368047404
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9976,7 +9690,6 @@ GameObject:
   - component: {fileID: 370531160}
   - component: {fileID: 370531163}
   - component: {fileID: 370531162}
-  - component: {fileID: 370531161}
   - component: {fileID: 370531164}
   - component: {fileID: 370531165}
   m_Layer: 0
@@ -10000,19 +9713,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &370531161
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370531159}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &370531162
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10077,6 +9777,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &370531165
 MonoBehaviour:
@@ -10387,7 +10088,6 @@ GameObject:
   - component: {fileID: 388931920}
   - component: {fileID: 388931925}
   - component: {fileID: 388931924}
-  - component: {fileID: 388931923}
   - component: {fileID: 388931922}
   - component: {fileID: 388931921}
   m_Layer: 0
@@ -10442,20 +10142,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &388931923
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388931919}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &388931924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10516,7 +10204,6 @@ GameObject:
   - component: {fileID: 389900447}
   - component: {fileID: 389900452}
   - component: {fileID: 389900451}
-  - component: {fileID: 389900450}
   - component: {fileID: 389900449}
   - component: {fileID: 389900448}
   m_Layer: 0
@@ -10571,20 +10258,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &389900450
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389900446}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &389900451
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10934,7 +10609,6 @@ GameObject:
   - component: {fileID: 421054220}
   - component: {fileID: 421054225}
   - component: {fileID: 421054224}
-  - component: {fileID: 421054223}
   - component: {fileID: 421054222}
   - component: {fileID: 421054221}
   m_Layer: 0
@@ -10989,20 +10663,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &421054223
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421054219}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &421054224
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11506,7 +11168,6 @@ GameObject:
   - component: {fileID: 445828906}
   - component: {fileID: 445828905}
   - component: {fileID: 445828907}
-  - component: {fileID: 445828908}
   m_Layer: 0
   m_Name: Enemy Large Forest
   m_TagString: Enemy
@@ -11612,20 +11273,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &445828908
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445828901}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &448592863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11980,7 +11629,6 @@ GameObject:
   - component: {fileID: 463384869}
   - component: {fileID: 463384874}
   - component: {fileID: 463384873}
-  - component: {fileID: 463384872}
   - component: {fileID: 463384871}
   - component: {fileID: 463384870}
   m_Layer: 0
@@ -12035,20 +11683,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &463384872
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 463384868}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &463384873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12612,7 +12248,6 @@ GameObject:
   - component: {fileID: 490150775}
   - component: {fileID: 490150780}
   - component: {fileID: 490150779}
-  - component: {fileID: 490150778}
   - component: {fileID: 490150777}
   - component: {fileID: 490150776}
   m_Layer: 0
@@ -12667,20 +12302,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &490150778
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490150774}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &490150779
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13173,7 +12796,6 @@ GameObject:
   - component: {fileID: 511610710}
   - component: {fileID: 511610715}
   - component: {fileID: 511610714}
-  - component: {fileID: 511610713}
   - component: {fileID: 511610712}
   - component: {fileID: 511610711}
   m_Layer: 0
@@ -13228,20 +12850,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &511610713
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511610709}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &511610714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13465,7 +13075,6 @@ GameObject:
   - component: {fileID: 519514392}
   - component: {fileID: 519514391}
   - component: {fileID: 519514393}
-  - component: {fileID: 519514394}
   m_Layer: 0
   m_Name: Enemy End Turned Van
   m_TagString: Enemy
@@ -13571,20 +13180,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &519514394
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519514387}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &520374162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15815,7 +15412,6 @@ GameObject:
   - component: {fileID: 629365620}
   - component: {fileID: 629365625}
   - component: {fileID: 629365624}
-  - component: {fileID: 629365623}
   - component: {fileID: 629365622}
   - component: {fileID: 629365621}
   m_Layer: 0
@@ -15870,20 +15466,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &629365623
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629365619}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &629365624
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16670,7 +16254,6 @@ GameObject:
   - component: {fileID: 664585028}
   - component: {fileID: 664585033}
   - component: {fileID: 664585032}
-  - component: {fileID: 664585031}
   - component: {fileID: 664585030}
   - component: {fileID: 664585029}
   m_Layer: 0
@@ -16725,20 +16308,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &664585031
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664585027}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &664585032
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16799,7 +16370,6 @@ GameObject:
   - component: {fileID: 670854048}
   - component: {fileID: 670854053}
   - component: {fileID: 670854052}
-  - component: {fileID: 670854051}
   - component: {fileID: 670854050}
   - component: {fileID: 670854049}
   m_Layer: 0
@@ -16854,20 +16424,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &670854051
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670854047}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &670854052
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16928,7 +16486,6 @@ GameObject:
   - component: {fileID: 673995149}
   - component: {fileID: 673995154}
   - component: {fileID: 673995153}
-  - component: {fileID: 673995152}
   - component: {fileID: 673995151}
   - component: {fileID: 673995150}
   m_Layer: 0
@@ -16983,20 +16540,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &673995152
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673995148}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &673995153
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17133,7 +16678,6 @@ GameObject:
   - component: {fileID: 683030187}
   - component: {fileID: 683030192}
   - component: {fileID: 683030191}
-  - component: {fileID: 683030190}
   - component: {fileID: 683030189}
   - component: {fileID: 683030188}
   m_Layer: 0
@@ -17188,20 +16732,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &683030190
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683030186}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &683030191
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17627,7 +17159,6 @@ GameObject:
   - component: {fileID: 713723687}
   - component: {fileID: 713723692}
   - component: {fileID: 713723691}
-  - component: {fileID: 713723690}
   - component: {fileID: 713723689}
   - component: {fileID: 713723688}
   m_Layer: 0
@@ -17682,20 +17213,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &713723690
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713723686}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &713723691
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18197,7 +17716,6 @@ GameObject:
   - component: {fileID: 729315639}
   - component: {fileID: 729315644}
   - component: {fileID: 729315643}
-  - component: {fileID: 729315642}
   - component: {fileID: 729315641}
   - component: {fileID: 729315640}
   m_Layer: 0
@@ -18252,20 +17770,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &729315642
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729315638}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &729315643
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18909,7 +18415,6 @@ GameObject:
   - component: {fileID: 760507567}
   - component: {fileID: 760507572}
   - component: {fileID: 760507571}
-  - component: {fileID: 760507570}
   - component: {fileID: 760507569}
   - component: {fileID: 760507568}
   m_Layer: 0
@@ -18964,20 +18469,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &760507570
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760507566}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &760507571
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19629,7 +19122,6 @@ GameObject:
   - component: {fileID: 795796851}
   - component: {fileID: 795796856}
   - component: {fileID: 795796855}
-  - component: {fileID: 795796854}
   - component: {fileID: 795796853}
   - component: {fileID: 795796852}
   m_Layer: 0
@@ -19684,20 +19176,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &795796854
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795796850}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &795796855
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19936,7 +19416,6 @@ GameObject:
   - component: {fileID: 804062797}
   - component: {fileID: 804062802}
   - component: {fileID: 804062801}
-  - component: {fileID: 804062800}
   - component: {fileID: 804062799}
   - component: {fileID: 804062798}
   m_Layer: 0
@@ -19991,20 +19470,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &804062800
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804062796}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &804062801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20903,7 +20370,6 @@ GameObject:
   - component: {fileID: 846369068}
   - component: {fileID: 846369073}
   - component: {fileID: 846369072}
-  - component: {fileID: 846369071}
   - component: {fileID: 846369070}
   - component: {fileID: 846369069}
   m_Layer: 0
@@ -20958,20 +20424,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &846369071
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846369067}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &846369072
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21218,7 +20672,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853553266}
-  m_LocalRotation: {x: -0.000024554138, y: 0.9924434, z: -0.12270345, w: -0.00019859747}
+  m_LocalRotation: {x: -0.000026078464, y: 0.9924434, z: -0.12270345, w: -0.00021092645}
   m_LocalPosition: {x: 170.39, y: 2.76, z: 27.788136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -21728,7 +21182,6 @@ GameObject:
   - component: {fileID: 879584338}
   - component: {fileID: 879584343}
   - component: {fileID: 879584342}
-  - component: {fileID: 879584341}
   - component: {fileID: 879584340}
   - component: {fileID: 879584339}
   m_Layer: 0
@@ -21783,20 +21236,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &879584341
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879584337}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &879584342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21890,7 +21331,6 @@ GameObject:
   - component: {fileID: 888862033}
   - component: {fileID: 888862038}
   - component: {fileID: 888862037}
-  - component: {fileID: 888862036}
   - component: {fileID: 888862035}
   - component: {fileID: 888862034}
   m_Layer: 0
@@ -21945,20 +21385,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &888862036
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888862032}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &888862037
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22193,7 +21621,6 @@ GameObject:
   - component: {fileID: 899287312}
   - component: {fileID: 899287317}
   - component: {fileID: 899287316}
-  - component: {fileID: 899287315}
   - component: {fileID: 899287314}
   - component: {fileID: 899287313}
   m_Layer: 0
@@ -22248,20 +21675,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &899287315
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899287311}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &899287316
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22817,7 +22232,6 @@ GameObject:
   - component: {fileID: 918300136}
   - component: {fileID: 918300141}
   - component: {fileID: 918300140}
-  - component: {fileID: 918300139}
   - component: {fileID: 918300138}
   - component: {fileID: 918300137}
   m_Layer: 0
@@ -22872,20 +22286,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &918300139
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918300135}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &918300140
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23114,7 +22516,6 @@ GameObject:
   - component: {fileID: 925406108}
   - component: {fileID: 925406113}
   - component: {fileID: 925406112}
-  - component: {fileID: 925406111}
   - component: {fileID: 925406110}
   - component: {fileID: 925406109}
   m_Layer: 0
@@ -23169,20 +22570,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &925406111
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925406107}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &925406112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23651,7 +23040,6 @@ GameObject:
   - component: {fileID: 954447533}
   - component: {fileID: 954447538}
   - component: {fileID: 954447537}
-  - component: {fileID: 954447536}
   - component: {fileID: 954447535}
   - component: {fileID: 954447534}
   m_Layer: 0
@@ -23706,20 +23094,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &954447536
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954447532}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &954447537
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23780,7 +23156,6 @@ GameObject:
   - component: {fileID: 955069800}
   - component: {fileID: 955069805}
   - component: {fileID: 955069804}
-  - component: {fileID: 955069803}
   - component: {fileID: 955069802}
   - component: {fileID: 955069801}
   m_Layer: 0
@@ -23835,20 +23210,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &955069803
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955069799}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &955069804
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23962,7 +23325,6 @@ GameObject:
   - component: {fileID: 957092359}
   - component: {fileID: 957092362}
   - component: {fileID: 957092361}
-  - component: {fileID: 957092360}
   - component: {fileID: 957092363}
   - component: {fileID: 957092364}
   m_Layer: 0
@@ -23986,19 +23348,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &957092360
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 957092358}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &957092361
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24063,6 +23412,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &957092364
 MonoBehaviour:
@@ -24627,7 +23977,6 @@ GameObject:
   - component: {fileID: 997735575}
   - component: {fileID: 997735580}
   - component: {fileID: 997735579}
-  - component: {fileID: 997735578}
   - component: {fileID: 997735577}
   - component: {fileID: 997735576}
   m_Layer: 0
@@ -24682,20 +24031,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &997735578
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997735574}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &997735579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25215,7 +24552,6 @@ GameObject:
   - component: {fileID: 1020781519}
   - component: {fileID: 1020781524}
   - component: {fileID: 1020781523}
-  - component: {fileID: 1020781522}
   - component: {fileID: 1020781521}
   - component: {fileID: 1020781520}
   m_Layer: 0
@@ -25270,20 +24606,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1020781522
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020781518}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1020781523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25344,7 +24668,6 @@ GameObject:
   - component: {fileID: 1022780305}
   - component: {fileID: 1022780310}
   - component: {fileID: 1022780309}
-  - component: {fileID: 1022780308}
   - component: {fileID: 1022780307}
   - component: {fileID: 1022780306}
   m_Layer: 0
@@ -25399,20 +24722,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1022780308
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022780304}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1022780309
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26574,7 +25885,6 @@ GameObject:
   - component: {fileID: 1074550505}
   - component: {fileID: 1074550508}
   - component: {fileID: 1074550507}
-  - component: {fileID: 1074550506}
   - component: {fileID: 1074550509}
   - component: {fileID: 1074550510}
   m_Layer: 0
@@ -26598,19 +25908,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1074550506
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074550504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1074550507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26675,6 +25972,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &1074550510
 MonoBehaviour:
@@ -27455,7 +26753,6 @@ GameObject:
   - component: {fileID: 1107087550}
   - component: {fileID: 1107087555}
   - component: {fileID: 1107087554}
-  - component: {fileID: 1107087553}
   - component: {fileID: 1107087552}
   - component: {fileID: 1107087551}
   m_Layer: 0
@@ -27510,20 +26807,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1107087553
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107087549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1107087554
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28125,7 +27410,6 @@ GameObject:
   - component: {fileID: 1124661654}
   - component: {fileID: 1124661659}
   - component: {fileID: 1124661658}
-  - component: {fileID: 1124661657}
   - component: {fileID: 1124661656}
   - component: {fileID: 1124661655}
   m_Layer: 0
@@ -28180,20 +27464,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1124661657
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124661653}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1124661658
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28631,7 +27903,6 @@ GameObject:
   - component: {fileID: 1141225881}
   - component: {fileID: 1141225886}
   - component: {fileID: 1141225885}
-  - component: {fileID: 1141225884}
   - component: {fileID: 1141225883}
   - component: {fileID: 1141225882}
   m_Layer: 0
@@ -28686,20 +27957,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1141225884
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141225880}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1141225885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29407,7 +28666,6 @@ GameObject:
   - component: {fileID: 1172040054}
   - component: {fileID: 1172040057}
   - component: {fileID: 1172040056}
-  - component: {fileID: 1172040055}
   - component: {fileID: 1172040058}
   - component: {fileID: 1172040059}
   m_Layer: 0
@@ -29431,19 +28689,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1172040055
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172040053}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1172040056
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29508,6 +28753,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &1172040059
 MonoBehaviour:
@@ -30070,7 +29316,6 @@ GameObject:
   - component: {fileID: 1186752414}
   - component: {fileID: 1186752419}
   - component: {fileID: 1186752418}
-  - component: {fileID: 1186752417}
   - component: {fileID: 1186752416}
   - component: {fileID: 1186752415}
   m_Layer: 0
@@ -30125,20 +29370,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1186752417
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186752413}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1186752418
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30775,7 +30008,6 @@ GameObject:
   - component: {fileID: 1205941495}
   - component: {fileID: 1205941494}
   - component: {fileID: 1205941496}
-  - component: {fileID: 1205941497}
   m_Layer: 0
   m_Name: Enemy Sign
   m_TagString: Enemy
@@ -30881,20 +30113,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1205941497
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205941490}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1211655927
 GameObject:
   m_ObjectHideFlags: 0
@@ -30906,7 +30126,6 @@ GameObject:
   - component: {fileID: 1211655928}
   - component: {fileID: 1211655933}
   - component: {fileID: 1211655932}
-  - component: {fileID: 1211655931}
   - component: {fileID: 1211655930}
   - component: {fileID: 1211655929}
   m_Layer: 0
@@ -30961,20 +30180,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1211655931
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1211655927}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1211655932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31097,7 +30304,6 @@ GameObject:
   - component: {fileID: 1217267623}
   - component: {fileID: 1217267628}
   - component: {fileID: 1217267627}
-  - component: {fileID: 1217267626}
   - component: {fileID: 1217267625}
   - component: {fileID: 1217267624}
   m_Layer: 0
@@ -31152,20 +30358,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1217267626
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217267622}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1217267627
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31800,7 +30994,6 @@ GameObject:
   - component: {fileID: 1248475761}
   - component: {fileID: 1248475766}
   - component: {fileID: 1248475765}
-  - component: {fileID: 1248475764}
   - component: {fileID: 1248475763}
   - component: {fileID: 1248475762}
   m_Layer: 0
@@ -31855,20 +31048,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1248475764
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248475760}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1248475765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31978,7 +31159,6 @@ GameObject:
   - component: {fileID: 1259331507}
   - component: {fileID: 1259331512}
   - component: {fileID: 1259331511}
-  - component: {fileID: 1259331510}
   - component: {fileID: 1259331509}
   - component: {fileID: 1259331508}
   m_Layer: 0
@@ -32033,20 +31213,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1259331510
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259331506}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1259331511
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32107,7 +31275,6 @@ GameObject:
   - component: {fileID: 1260374759}
   - component: {fileID: 1260374764}
   - component: {fileID: 1260374763}
-  - component: {fileID: 1260374762}
   - component: {fileID: 1260374761}
   - component: {fileID: 1260374760}
   m_Layer: 0
@@ -32162,20 +31329,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1260374762
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260374758}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1260374763
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32942,7 +32097,6 @@ GameObject:
   - component: {fileID: 1301724777}
   - component: {fileID: 1301724782}
   - component: {fileID: 1301724781}
-  - component: {fileID: 1301724780}
   - component: {fileID: 1301724779}
   - component: {fileID: 1301724778}
   m_Layer: 0
@@ -32997,20 +32151,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1301724780
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301724776}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1301724781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33592,7 +32734,6 @@ GameObject:
   - component: {fileID: 1341002288}
   - component: {fileID: 1341002293}
   - component: {fileID: 1341002292}
-  - component: {fileID: 1341002291}
   - component: {fileID: 1341002290}
   - component: {fileID: 1341002289}
   m_Layer: 0
@@ -33647,20 +32788,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1341002291
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341002287}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1341002292
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34187,7 +33316,6 @@ GameObject:
   - component: {fileID: 1365096688}
   - component: {fileID: 1365096687}
   - component: {fileID: 1365096689}
-  - component: {fileID: 1365096690}
   m_Layer: 0
   m_Name: Enemy Small Forest Ally
   m_TagString: Enemy
@@ -34293,20 +33421,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1365096690
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365096683}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1365645069
 GameObject:
   m_ObjectHideFlags: 0
@@ -34594,7 +33710,6 @@ GameObject:
   - component: {fileID: 1384737937}
   - component: {fileID: 1384737936}
   - component: {fileID: 1384737938}
-  - component: {fileID: 1384737939}
   m_Layer: 0
   m_Name: ' Enemy Large Forest Entrance'
   m_TagString: Enemy
@@ -34700,20 +33815,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1384737939
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384737932}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1387089814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: ca6a542169d8e474aa2c2cb47423839a, type: 3}
@@ -35689,7 +34792,6 @@ GameObject:
   - component: {fileID: 1428139207}
   - component: {fileID: 1428139212}
   - component: {fileID: 1428139211}
-  - component: {fileID: 1428139210}
   - component: {fileID: 1428139209}
   - component: {fileID: 1428139208}
   m_Layer: 0
@@ -35744,20 +34846,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1428139210
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428139206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1428139211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35818,7 +34908,6 @@ GameObject:
   - component: {fileID: 1429380516}
   - component: {fileID: 1429380521}
   - component: {fileID: 1429380520}
-  - component: {fileID: 1429380519}
   - component: {fileID: 1429380518}
   - component: {fileID: 1429380517}
   m_Layer: 0
@@ -35873,20 +34962,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1429380519
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429380515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1429380520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36264,7 +35341,6 @@ GameObject:
   - component: {fileID: 1447160172}
   - component: {fileID: 1447160175}
   - component: {fileID: 1447160174}
-  - component: {fileID: 1447160173}
   - component: {fileID: 1447160176}
   - component: {fileID: 1447160177}
   m_Layer: 0
@@ -36288,19 +35364,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1447160173
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447160171}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1447160174
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36365,6 +35428,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &1447160177
 MonoBehaviour:
@@ -36685,7 +35749,6 @@ GameObject:
   - component: {fileID: 1463567756}
   - component: {fileID: 1463567759}
   - component: {fileID: 1463567758}
-  - component: {fileID: 1463567757}
   - component: {fileID: 1463567760}
   - component: {fileID: 1463567761}
   m_Layer: 0
@@ -36709,19 +35772,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1463567757
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463567755}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1463567758
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36786,6 +35836,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &1463567761
 MonoBehaviour:
@@ -37233,7 +36284,6 @@ GameObject:
   - component: {fileID: 1479406873}
   - component: {fileID: 1479406878}
   - component: {fileID: 1479406877}
-  - component: {fileID: 1479406876}
   - component: {fileID: 1479406875}
   - component: {fileID: 1479406874}
   m_Layer: 0
@@ -37288,20 +36338,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1479406876
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479406872}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1479406877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37405,7 +36443,6 @@ GameObject:
   - component: {fileID: 1484468287}
   - component: {fileID: 1484468292}
   - component: {fileID: 1484468291}
-  - component: {fileID: 1484468290}
   - component: {fileID: 1484468289}
   - component: {fileID: 1484468288}
   m_Layer: 0
@@ -37460,20 +36497,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1484468290
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484468286}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1484468291
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37750,7 +36775,6 @@ GameObject:
   - component: {fileID: 1490216924}
   - component: {fileID: 1490216929}
   - component: {fileID: 1490216928}
-  - component: {fileID: 1490216927}
   - component: {fileID: 1490216926}
   - component: {fileID: 1490216925}
   m_Layer: 0
@@ -37805,20 +36829,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1490216927
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490216923}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1490216928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37898,7 +36910,6 @@ GameObject:
   - component: {fileID: 1490936869}
   - component: {fileID: 1490936874}
   - component: {fileID: 1490936873}
-  - component: {fileID: 1490936872}
   - component: {fileID: 1490936871}
   - component: {fileID: 1490936870}
   m_Layer: 0
@@ -37953,20 +36964,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1490936872
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490936868}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1490936873
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38027,7 +37026,6 @@ GameObject:
   - component: {fileID: 1494722405}
   - component: {fileID: 1494722410}
   - component: {fileID: 1494722409}
-  - component: {fileID: 1494722408}
   - component: {fileID: 1494722407}
   - component: {fileID: 1494722406}
   m_Layer: 0
@@ -38082,20 +37080,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1494722408
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494722404}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1494722409
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38309,7 +37295,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499793218}
-  m_LocalRotation: {x: -0.000024554138, y: 0.9924434, z: -0.12270345, w: -0.00019859747}
+  m_LocalRotation: {x: -0.000026078464, y: 0.9924434, z: -0.12270345, w: -0.00021092645}
   m_LocalPosition: {x: 170.39, y: 2.76, z: 27.788136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -38417,7 +37403,6 @@ GameObject:
   - component: {fileID: 1507212473}
   - component: {fileID: 1507212472}
   - component: {fileID: 1507212474}
-  - component: {fileID: 1507212475}
   m_Layer: 0
   m_Name: Enemy Medium Forest
   m_TagString: Enemy
@@ -38523,20 +37508,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1507212475
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507212468}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1507740162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d80c7433031fdee44bf3910c4b046ce7, type: 3}
@@ -39102,7 +38075,6 @@ GameObject:
   - component: {fileID: 1528838861}
   - component: {fileID: 1528838866}
   - component: {fileID: 1528838865}
-  - component: {fileID: 1528838864}
   - component: {fileID: 1528838863}
   - component: {fileID: 1528838862}
   m_Layer: 0
@@ -39157,20 +38129,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1528838864
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1528838860}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1528838865
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39231,7 +38191,6 @@ GameObject:
   - component: {fileID: 1531060863}
   - component: {fileID: 1531060868}
   - component: {fileID: 1531060867}
-  - component: {fileID: 1531060866}
   - component: {fileID: 1531060865}
   - component: {fileID: 1531060864}
   m_Layer: 0
@@ -39286,20 +38245,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1531060866
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531060862}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1531060867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39360,7 +38307,6 @@ GameObject:
   - component: {fileID: 1531775098}
   - component: {fileID: 1531775103}
   - component: {fileID: 1531775102}
-  - component: {fileID: 1531775101}
   - component: {fileID: 1531775100}
   - component: {fileID: 1531775099}
   m_Layer: 0
@@ -39415,20 +38361,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1531775101
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531775097}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1531775102
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40283,7 +39217,6 @@ GameObject:
   - component: {fileID: 1563778056}
   - component: {fileID: 1563778061}
   - component: {fileID: 1563778060}
-  - component: {fileID: 1563778059}
   - component: {fileID: 1563778058}
   - component: {fileID: 1563778057}
   m_Layer: 0
@@ -40338,20 +39271,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1563778059
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563778055}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1563778060
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40417,7 +39338,6 @@ GameObject:
   - component: {fileID: 1566439937}
   - component: {fileID: 1566439942}
   - component: {fileID: 1566439941}
-  - component: {fileID: 1566439940}
   - component: {fileID: 1566439939}
   - component: {fileID: 1566439938}
   m_Layer: 0
@@ -40472,20 +39392,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1566439940
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566439936}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1566439941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -40998,7 +39906,6 @@ GameObject:
   - component: {fileID: 1589504716}
   - component: {fileID: 1589504721}
   - component: {fileID: 1589504720}
-  - component: {fileID: 1589504719}
   - component: {fileID: 1589504718}
   - component: {fileID: 1589504717}
   m_Layer: 0
@@ -41053,20 +39960,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1589504719
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589504715}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1589504720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41380,7 +40275,6 @@ GameObject:
   - component: {fileID: 1603724131}
   - component: {fileID: 1603724136}
   - component: {fileID: 1603724135}
-  - component: {fileID: 1603724134}
   - component: {fileID: 1603724133}
   - component: {fileID: 1603724132}
   m_Layer: 0
@@ -41435,20 +40329,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1603724134
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603724130}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1603724135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42348,7 +41230,6 @@ GameObject:
   - component: {fileID: 1633473202}
   - component: {fileID: 1633473207}
   - component: {fileID: 1633473206}
-  - component: {fileID: 1633473205}
   - component: {fileID: 1633473204}
   - component: {fileID: 1633473203}
   m_Layer: 0
@@ -42403,20 +41284,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1633473205
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633473201}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1633473206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -42733,7 +41602,6 @@ GameObject:
   - component: {fileID: 1653814104}
   - component: {fileID: 1653814109}
   - component: {fileID: 1653814108}
-  - component: {fileID: 1653814107}
   - component: {fileID: 1653814106}
   - component: {fileID: 1653814105}
   m_Layer: 0
@@ -42788,20 +41656,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1653814107
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653814103}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1653814108
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43522,7 +42378,6 @@ GameObject:
   - component: {fileID: 1680082637}
   - component: {fileID: 1680082642}
   - component: {fileID: 1680082641}
-  - component: {fileID: 1680082640}
   - component: {fileID: 1680082639}
   - component: {fileID: 1680082638}
   m_Layer: 0
@@ -43577,20 +42432,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1680082640
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680082636}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1680082641
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44454,7 +43297,6 @@ GameObject:
   - component: {fileID: 1717448553}
   - component: {fileID: 1717448558}
   - component: {fileID: 1717448557}
-  - component: {fileID: 1717448556}
   - component: {fileID: 1717448555}
   - component: {fileID: 1717448554}
   m_Layer: 0
@@ -44509,20 +43351,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1717448556
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717448552}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1717448557
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44718,7 +43548,6 @@ GameObject:
   - component: {fileID: 1722946803}
   - component: {fileID: 1722946808}
   - component: {fileID: 1722946807}
-  - component: {fileID: 1722946806}
   - component: {fileID: 1722946805}
   - component: {fileID: 1722946804}
   m_Layer: 0
@@ -44773,20 +43602,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1722946806
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722946802}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1722946807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45016,7 +43833,6 @@ GameObject:
   - component: {fileID: 1731955943}
   - component: {fileID: 1731955948}
   - component: {fileID: 1731955947}
-  - component: {fileID: 1731955946}
   - component: {fileID: 1731955945}
   - component: {fileID: 1731955944}
   m_Layer: 0
@@ -45071,20 +43887,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1731955946
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731955942}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1731955947
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46452,7 +45256,6 @@ GameObject:
   - component: {fileID: 1781074560}
   - component: {fileID: 1781074565}
   - component: {fileID: 1781074564}
-  - component: {fileID: 1781074563}
   - component: {fileID: 1781074562}
   - component: {fileID: 1781074561}
   m_Layer: 0
@@ -46507,20 +45310,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1781074563
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781074559}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1781074564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46643,7 +45434,6 @@ GameObject:
   - component: {fileID: 1788880594}
   - component: {fileID: 1788880599}
   - component: {fileID: 1788880598}
-  - component: {fileID: 1788880597}
   - component: {fileID: 1788880596}
   - component: {fileID: 1788880595}
   m_Layer: 0
@@ -46698,20 +45488,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1788880597
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788880593}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1788880598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48482,7 +47260,6 @@ GameObject:
   - component: {fileID: 1880959833}
   - component: {fileID: 1880959838}
   - component: {fileID: 1880959837}
-  - component: {fileID: 1880959836}
   - component: {fileID: 1880959835}
   - component: {fileID: 1880959834}
   m_Layer: 0
@@ -48537,20 +47314,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1880959836
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880959832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1880959837
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49315,7 +48080,6 @@ GameObject:
   - component: {fileID: 1910901795}
   - component: {fileID: 1910901800}
   - component: {fileID: 1910901799}
-  - component: {fileID: 1910901798}
   - component: {fileID: 1910901797}
   - component: {fileID: 1910901796}
   m_Layer: 0
@@ -49370,20 +48134,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1910901798
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910901794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1910901799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49799,7 +48551,6 @@ GameObject:
   - component: {fileID: 1926186552}
   - component: {fileID: 1926186551}
   - component: {fileID: 1926186553}
-  - component: {fileID: 1926186554}
   m_Layer: 0
   m_Name: Enemy Car Block
   m_TagString: Enemy
@@ -49905,20 +48656,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &1926186554
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926186547}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1926297482
 GameObject:
   m_ObjectHideFlags: 0
@@ -50977,7 +49716,6 @@ GameObject:
   - component: {fileID: 1972334498}
   - component: {fileID: 1972334501}
   - component: {fileID: 1972334500}
-  - component: {fileID: 1972334499}
   - component: {fileID: 1972334502}
   - component: {fileID: 1972334503}
   m_Layer: 0
@@ -51001,19 +49739,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1972334499
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972334497}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1972334500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51078,6 +49803,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &1972334503
 MonoBehaviour:
@@ -51436,7 +50162,6 @@ GameObject:
   - component: {fileID: 1990028799}
   - component: {fileID: 1990028802}
   - component: {fileID: 1990028801}
-  - component: {fileID: 1990028800}
   - component: {fileID: 1990028803}
   - component: {fileID: 1990028804}
   m_Layer: 0
@@ -51460,19 +50185,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1990028800
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990028798}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1990028801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -51537,6 +50249,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &1990028804
 MonoBehaviour:
@@ -53095,7 +51808,6 @@ GameObject:
   - component: {fileID: 2078450985}
   - component: {fileID: 2078450990}
   - component: {fileID: 2078450989}
-  - component: {fileID: 2078450988}
   - component: {fileID: 2078450987}
   - component: {fileID: 2078450986}
   m_Layer: 0
@@ -53150,20 +51862,8 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
---- !u!135 &2078450988
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078450984}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2078450989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53224,7 +51924,6 @@ GameObject:
   - component: {fileID: 2081353732}
   - component: {fileID: 2081353735}
   - component: {fileID: 2081353734}
-  - component: {fileID: 2081353733}
   - component: {fileID: 2081353736}
   - component: {fileID: 2081353737}
   m_Layer: 0
@@ -53248,19 +51947,6 @@ Transform:
   m_Father: {fileID: 1562763264}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2081353733
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081353731}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 20
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2081353734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53325,6 +52011,7 @@ MonoBehaviour:
   yellowThreshHold: 22
   redThreshHold: 10
   dangerLevel: 
+  DangerCause: {fileID: 600572868}
   isVisible: 0
 --- !u!114 &2081353737
 MonoBehaviour:
