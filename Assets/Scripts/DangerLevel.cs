@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DangerLevel : MonoBehaviour
 {
@@ -35,27 +36,29 @@ public class DangerLevel : MonoBehaviour
    
     private IEnumerator updateDangerLevel(GameObject other)
     {
-        while (true)
+        if (SceneManager.GetActiveScene().name == "Scene1")
         {
-            float distance = Vector3.Distance(this.transform.position, other.transform.position);
-            Debug.Log(distance);
-            if (distance < redThreshHold)
+            while (true)
             {
-                dangerLevel = "red";
+                float distance = Vector3.Distance(this.transform.position, other.transform.position);
+                Debug.Log(distance);
+                if (distance < redThreshHold)
+                {
+                    dangerLevel = "red";
 
-            }
-            else if (distance < yellowThreshHold)
-            {
-                dangerLevel = "yellow";
+                }
+                else if (distance < yellowThreshHold)
+                {
+                    dangerLevel = "yellow";
 
+                }
+                else
+                {
+                    dangerLevel = "green";
+                    flagEnter = false;
+                }
+                yield return new WaitForSeconds(timeBetweenChecks);
             }
-            else
-            {
-                dangerLevel = "green";
-                flagEnter = false;
-            }
-            yield return new WaitForSeconds(timeBetweenChecks);
         }
-        
     }
 }
