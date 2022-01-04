@@ -8,6 +8,7 @@ Click [here](https://github.com/gamedev-srg/Hide-and-Seek-Royale/blob/main/forma
 
 Click [Here](https://g-r-s.itch.io/hnsr) for the itch.io page of the game.
 
+Click [Here](https://youtu.be/XI9uib1ex70) for the Youtube Trailer.
 
 ## The game
 ### Introduction
