@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fire : MonoBehaviour
 {
@@ -27,8 +28,11 @@ public class Fire : MonoBehaviour
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
-        ammoText.text = "Ammo: " + ammunition.ToString();
-        ammoText.color = Color.black;
+        if (SceneManager.GetActiveScene().name == "Scene1")
+        {
+            ammoText.text = "Ammo: " + ammunition.ToString();
+            ammoText.color = Color.black;
+        }
     }
 
     void Update()
@@ -41,11 +45,14 @@ public class Fire : MonoBehaviour
                 Shoot();
                 nextFireTime = Time.time + fireRate;
                 ammunition--;
-                ammoText.text = "Ammo: " + ammunition.ToString();
-                ammoText.color = Color.black;
+                if (SceneManager.GetActiveScene().name == "Scene1")
+                {
+                    ammoText.text = "Ammo: " + ammunition.ToString();
+                    ammoText.color = Color.black;
+                }
             }
         }
-        if (ammunition <= 0)
+        if (ammunition <= 0 && SceneManager.GetActiveScene().name == "Scene1")
         {
             ammoText.text = "Out Of Ammo";
             ammoText.color = Color.red;
@@ -89,7 +96,10 @@ public class Fire : MonoBehaviour
     public void addAmmo()
     {
         ammunition += magazineSize;
-        ammoText.text = "Ammo: " + ammunition.ToString();
-        ammoText.color = Color.black;
+        if (SceneManager.GetActiveScene().name == "Scene1")
+        {
+            ammoText.text = "Ammo: " + ammunition.ToString();
+            ammoText.color = Color.black;
+        }
     }
 }
